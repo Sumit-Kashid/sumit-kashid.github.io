@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sumit Kashid</title>
-<meta name="description" content="Sumit Kashid, software engineer building backend services, data pipelines, and LLM tools. Work at Cincinnati Children's Hospital and Bank of America.">
+<meta name="description" content="Sumit Kashid, AI engineer building LLM agents, evaluation, and the data systems behind them. Work at Cincinnati Children's Hospital and Bank of America.">
 <meta property="og:title" content="Sumit Kashid">
-<meta property="og:description" content="Backend services, data pipelines, and LLM tools that check their data before anyone acts on it.">
+<meta property="og:description" content="AI engineer building LLM agents that check their data before anyone acts on them.">
 <meta property="og:url" content="https://sumit-kashid.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300463c'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23e6f5c8'%3ESK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,10 +132,10 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 <div class="top">
 <div>
 <h1>Sumit Kashid</h1>
-<p class="lede">I build backend services, data pipelines, and LLM tools that check their data before anyone acts on it.</p>
+<p class="lede">AI engineer. I build LLM agents and the data systems behind them, and make sure they check their numbers before anyone acts on them.</p>
 </div>
 <div>
-<p class="about">Software engineer with nearly 4 years of experience, from full stack card systems at Bank of America to production services at Cincinnati Children's Hospital. Master of Science in Business Analytics at the University of Cincinnati, December 2026.</p>
+<p class="about">Nearly 4 years of experience shipping software, from full stack card systems at Bank of America to production LLM tools for hospital staff at Cincinnati Children's Hospital. I work on tool use, structured outputs, agent memory, and evaluation, with the engineering underneath: APIs, pipelines, CI, and cloud deployment. Master of Science in Business Analytics at the University of Cincinnati, December 2026.</p>
 <div class="cta"><a class="btn solid" href="#work">See selected work</a><a class="btn" href="#contact">Get in touch</a></div>
 </div>
 </div>
@@ -146,10 +146,10 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 </div>
 
 <div class="figs">
+<div class="fig"><b>11</b><span>typed tools behind the Care Advisor LLM agent at Cincinnati Children's</span></div>
+<div class="fig"><b>3</b><span>production bugs found in an audit, including one that returned empty results with no error</span></div>
 <div class="fig"><b>40%</b><span>faster response to critical events, Bank of America monitoring app</span></div>
 <div class="fig"><b>85%</b><span>less manual processing from Azure Data Factory pipelines for TQL</span></div>
-<div class="fig"><b>92%</b><span>higher data consistency in the same TQL pipelines</span></div>
-<div class="fig"><b>11</b><span>typed data tools behind Care Advisor at Cincinnati Children's</span></div>
 <div class="fig"><b>120+</b><span>graduate students taught, with 94% satisfaction</span></div>
 </div>
 </div>
@@ -158,12 +158,12 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 <main>
 <section class="band sec" id="work">
 <div class="wrap">
-<h2>Selected work, with the numbers behind it</h2>
+<h2>Selected AI and data work, with the numbers behind it</h2>
 <p class="intro">Each project below is real work I shipped or ran. Where a result was weak, I say so.</p>
 
 <article class="case">
 <div>
-<h3>Care Advisor: a patient flow tool hospital staff can trust</h3>
+<h3>Care Advisor: an LLM agent hospital staff can trust</h3>
 <p class="meta">Cincinnati Children's Hospital Medical Center · May 2026 to present</p>
 <p>Hospital staff needed fast answers about patient flow and capacity. I built the service behind it and kept one rule: Python does the math, the model only explains it.</p>
 <ul>
@@ -188,16 +188,16 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 
 <article class="case">
 <div>
-<h3>ECI monitoring for card teams</h3>
-<p class="meta">Bank of America, Mumbai · Feb 2023 to Aug 2025</p>
-<p>Card teams needed to see critical events sooner. I delivered a monitoring application that cut their response time to those events by 40 percent.</p>
-<p>Across two and a half years I built full stack features with Java, Spring Boot, Kafka, TypeScript, Node.js, React, and SQL stored procedures, plus .NET microservices in containers. I ran code reviews and testing validation and coordinated production releases.</p>
-<div class="tags"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>TypeScript</span><span>Node.js</span><span>React</span><span>SQL</span><span>.NET</span></div>
+<h3>Clinical NLP: prior authorization readiness classifier</h3>
+<p class="meta">Natural Language Processing course project · 2026</p>
+<p>I fine tuned BiomedBERT on 5,000 de identified MIMIC IV records and compared three BERT models against a TF IDF baseline. I used leakage prevention, weighted loss, threshold tuning, and fp16 mixed precision on GPU.</p>
+<p>The result was near random AUC with a majority class bias. I reported that plainly instead of leaning on a single F1 score, because a model that looks good on one metric can still be useless.</p>
+<div class="tags"><span>BiomedBERT</span><span>Python</span><span>GPU training</span><span>Evaluation</span></div>
+<a class="repo" href="https://github.com/Sumit-Kashid/NLP">Read the write up on GitHub</a>
 </div>
 <div class="side">
-<h4>What I took from banking</h4>
-<p>Releases to production systems that move money teach you to test the boring paths. I still write the check before the feature.</p>
-<div class="mini"><div><b>2.5 yrs</b><span>full stack engineering</span></div><div><b>40%</b><span>faster event response</span></div></div>
+<h4>Setup</h4>
+<div class="mini"><div><b>5,000</b><span>clinical records</span></div><div><b>3</b><span>BERT models compared</span></div><div><b>1</b><span>TF IDF baseline</span></div></div>
 </div>
 </article>
 
@@ -218,16 +218,16 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 
 <article class="case">
 <div>
-<h3>Prior authorization readiness classifier</h3>
-<p class="meta">Natural Language Processing course project · 2026</p>
-<p>I fine tuned BiomedBERT on 5,000 de identified MIMIC IV records and compared three BERT models against a TF IDF baseline. I used leakage prevention, weighted loss, threshold tuning, and fp16 mixed precision on GPU.</p>
-<p>The result was near random AUC with a majority class bias. I reported that plainly instead of leaning on a single F1 score, because a model that looks good on one metric can still be useless.</p>
-<div class="tags"><span>BiomedBERT</span><span>Python</span><span>GPU training</span><span>Evaluation</span></div>
-<a class="repo" href="https://github.com/Sumit-Kashid/NLP">Read the write up on GitHub</a>
+<h3>ECI monitoring for card teams</h3>
+<p class="meta">Bank of America, Mumbai · Feb 2023 to Aug 2025</p>
+<p>Card teams needed to see critical events sooner. I delivered a monitoring application that cut their response time to those events by 40 percent.</p>
+<p>Across two and a half years I built full stack features with Java, Spring Boot, Kafka, TypeScript, Node.js, React, and SQL stored procedures, plus .NET microservices in containers. I ran code reviews and testing validation and coordinated production releases.</p>
+<div class="tags"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>TypeScript</span><span>Node.js</span><span>React</span><span>SQL</span><span>.NET</span></div>
 </div>
 <div class="side">
-<h4>Setup</h4>
-<div class="mini"><div><b>5,000</b><span>clinical records</span></div><div><b>3</b><span>BERT models compared</span></div><div><b>1</b><span>TF IDF baseline</span></div></div>
+<h4>What I took from banking</h4>
+<p>Releases to production systems that move money teach you to test the boring paths. I still write the check before the feature.</p>
+<div class="mini"><div><b>2.5 yrs</b><span>full stack engineering</span></div><div><b>40%</b><span>faster event response</span></div></div>
 </div>
 </article>
 
@@ -273,14 +273,14 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 
 <section class="band sec" id="skills">
 <div class="wrap">
-<h2>Skills I use at work</h2>
+<h2>What I work with</h2>
 <div class="skills">
-<div><h3>Languages</h3><p>Python, TypeScript, JavaScript, SQL, Java, R, PySpark</p></div>
-<div><h3>Backend and APIs</h3><p>FastAPI, Django, Node.js, Spring Boot, Kafka, .NET microservices, Pydantic</p></div>
+<div><h3>LLM and agent engineering</h3><p>LLM APIs, Azure OpenAI, tool use, structured outputs, agent memory, MCP (FastMCP), LangChain, LangGraph, RAG</p></div>
+<div><h3>Evaluation and reliability</h3><p>Evaluation test sets and scoring, Langfuse tracing, MLflow, structured logging, data freshness checks</p></div>
+<div><h3>Machine learning</h3><p>NLP, fine tuning BERT models, GPU training, SVMs, time series forecasting, scikit learn</p></div>
+<div><h3>Backend and APIs</h3><p>Python, FastAPI, Pydantic, Django, Node.js, TypeScript, Spring Boot, Kafka</p></div>
 <div><h3>Cloud and DevOps</h3><p>Azure, AWS, GCP, Docker, GitHub Actions, CI with ruff, mypy, and tests</p></div>
-<div><h3>Data</h3><p>Microsoft Fabric, Azure Data Factory, Snowflake, Power BI, Tableau, Plotly</p></div>
-<div><h3>LLM systems</h3><p>LLM APIs, Azure OpenAI, MCP, LangChain, LangGraph, RAG, agent memory</p></div>
-<div><h3>Reliability</h3><p>Evaluation test sets, Langfuse tracing, MLflow, structured logging, data freshness checks</p></div>
+<div><h3>Data</h3><p>SQL, Microsoft Fabric, Azure Data Factory, Snowflake, PySpark, Power BI, Tableau</p></div>
 </div>
 <div class="edu">
 <div><h3>Master of Science, Business Analytics</h3><p>University of Cincinnati, Carl H. Lindner College of Business. Expected December 2026. Coursework in Natural Language Processing, Machine Learning, Artificial Intelligence, Software Testing and Quality Assurance, and Database Theory.</p></div>
@@ -292,8 +292,8 @@ footer p{color:rgba(255,255,255,.85);max-width:60ch}
 
 <footer class="band" id="contact">
 <div class="wrap">
-<h2>Looking for full time engineering roles after December 2026</h2>
-<p>I am most useful where data, backend services, and LLM tools meet real operations. If that sounds like your team, I would like to talk.</p>
+<h2>Looking for AI engineering roles after December 2026</h2>
+<p>I am most useful building LLM agents for real operations, where the answers have to be right and someone has to be able to check them. If that sounds like your team, I would like to talk.</p>
 <div class="contact">
 <a href="mailto:sumitkashid505@gmail.com"><small>Email</small><span>sumitkashid505@gmail.com</span></a>
 <a href="https://www.linkedin.com/in/sumit-kashid/"><small>LinkedIn</small><span>linkedin.com/in/sumit-kashid</span></a>
